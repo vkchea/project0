@@ -1,22 +1,25 @@
-.title {
-    font-size: 40px;
+a:link{
+    color: black;
+    font-family: 'Ramabhadra', sans-serif;
+    text-decoration: none;
+}
+#nav-bar{
+    width: 100%;
+    border-bottom: solid;
+    border-bottom-width: .1px;
+    border-color: rgb(218, 218, 218);
+}
+.nav-bar-h {
+    width: 150px;
+    height: 100px;
+    display: inline-block;
+    vertical-align: top;
     text-align: center;
-    font-family: 'Dosis', sans-serif;
+    margin-top: 25px;
+    margin-left: 10px;
 }
-.title-spacer-top, .title-spacer-bottom{
-    height: 75px;
-    background-color: #90323D;
-}
-#profile-pic-backdrop{
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    background-color: rgb(212, 245, 255);
-}
-#profile-pic {
-    width: 150px;   
-    height: 150px;
-    margin-top: 5px;
-    margin-left: 5px;
-    border-radius: 50%;
+#logo{
+    margin-top: -25px !important;
+    width: 100px;
+    height: auto;
 }
