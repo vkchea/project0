@@ -1,25 +1,154 @@
-a:link{
-    color: black;
-    font-family: 'Ramabhadra', sans-serif;
-    text-decoration: none;
+/*--------------- General ------------------*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+.horizontal-line{
+  width: 100%;
+  border-bottom: solid;
+  border-width: 1px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.label-icon{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10px;
+}
+.material-icons {
+  color:rgb(161, 218, 123);
+  font-size: 20px !important;
+  padding-bottom: 0px !important;
+  margin-right: 5px;
+}
+/*--------------- Navbar------------------*/
 #nav-bar{
-    width: 100%;
-    border-bottom: solid;
-    border-bottom-width: .1px;
-    border-color: rgb(218, 218, 218);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 1%;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
 }
-.nav-bar-h {
-    width: 150px;
-    height: 100px;
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
-    margin-top: 25px;
-    margin-left: 10px;
+.nav-bar-main a{
+  color: black;
+  font-family: 'Ramabhadra', sans-serif;
+  font-size: 13px;
+  padding: 0px 20px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.nav-bar-main a:hover{
+  color:rgb(161, 218, 123);
 }
 #logo{
-    margin-top: -25px !important;
-    width: 100px;
-    height: auto;
+  height: 100px;
+  cursor: default;
+}
+.logout {
+  color: black;
+  font-family: 'Ramabhadra', sans-serif;
+  font-size: 13px;
+  text-decoration: none;
+  padding: 9px 25px;
+  margin-left: auto;
+}
+.logout:hover{
+  color:rgb(161, 218, 123);
+}
+/*----------------- Body ----------------------*/
+.main-body{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+
+/*-------------- About Me -----------------*/
+.about-me{
+  color: black;
+  font-family: 'Ramabhadra', sans-serif;
+  font-size: 11px;
+  padding: 10px 10px;
+  flex: .75;
+  height: 82vh;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2);
+  cursor: default;
+  overflow-y: auto;
+}
+
+ol.hobby-list li:before { 
+  flex: none; 
+  list-style-type: none;
+  padding: 0em 10px;
+}
+ol.hobby-list > li {
+  flex: none; 
+  list-style-type: none;
+  font-weight: bold;
+}
+ol.hobby-list > li:before {
+  flex: none; 
+  list-style-type: none;
+  font-weight: bold; 
+}
+ol.hobby-list ol {
+  width: 100%; 
+  flex: none; 
+  list-style-type: none;
+  padding: 0em 10px; 
+  font-weight: normal;
+}
+/*-------------- Project List -----------------*/
+
+.project-list{
+  color: black;
+  font-family: 'Ramabhadra', sans-serif;
+  font-size: 11px;
+  padding: 10px 10px;
+  flex: 3;
+  height: 82vh;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+  cursor: default;
+  overflow-y: auto;
+}
+.get-projects{
+  text-align: center;
+}
+#flow-diagram{
+  width: 700px;
+}
+/*-------------- Games -----------------*/
+
+.games {
+  color: black;
+  font-family: 'Ramabhadra', sans-serif;
+  font-size: 11px;
+  padding: 10px 10px;
+  flex: .75;
+  height: 82vh;
+  box-shadow: 0px 4px 4px 0 rgba(0,0,0,0.2);
+  cursor: default;
+  overflow-y: auto;
+}
+
+/*------------- Scrollbars -------------*/
+
+.about-me::-webkit-scrollbar-track, .project-list::-webkit-scrollbar-track, .games::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgb(241, 252, 233);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.about-me::-webkit-scrollbar, .project-list::-webkit-scrollbar, .games::-webkit-scrollbar {
+	width: 8px;
+	background-color: #F5F5F5;
+}
+.about-me:hover::-webkit-scrollbar-thumb, .project-list:hover::-webkit-scrollbar-thumb, .games:hover::-webkit-scrollbar-thumb {
+  background-color: rgb(135, 221, 214);
+}
+.about-me::-webkit-scrollbar-thumb, .project-list::-webkit-scrollbar-thumb, .games::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px #B5D99C;
+	background-color:rgb(145, 228, 221);
 }
