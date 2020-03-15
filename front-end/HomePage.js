@@ -14,7 +14,8 @@ function renderNavbar(){
     ul.setAttribute("class", "nav-bar-main");
     for(let i = 0; i < navArray.length; i++){
         let a = document.createElement("a");
-        a.setAttribute("href", "/" + navArray[i].toLowerCase());
+        // a.setAttribute("href", + navArray[i].toLowerCase());
+        a.setAttribute("href", + "/" + "HomePage.html");
         a.innerHTML = navArray[i];
         ul.appendChild(a);
     }
