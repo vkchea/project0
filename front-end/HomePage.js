@@ -65,17 +65,17 @@ let projectArray = {
     }
 }
 function renderProjects(){
-    let projects = document.getElementById("get-projects");
-    let name = document.createElement("label");
-    name.innerHTML = projectArray[0].name;
-    projects.appendChild(name);
-    let description = document.createElement("p");
-    description.innerHTML = projectArray[0].description;
-    projects.appendChild(description);
-    let image = document.createElement("img");
-    image.setAttribute("src", projectArray[0].image);
-    image.setAttribute("alt", "flow-diagram");
-    image.setAttribute("id", "flow-diagram");
-    projects.appendChild(image);
+    // let projects = document.getElementById("get-projects");
+    // let name = document.createElement("label");
+    // name.innerHTML = projectArray[0].name;
+    // projects.appendChild(name);
+    // let description = document.createElement("p");
+    // description.innerHTML = projectArray[0].description;
+    // projects.appendChild(description);
+    // let image = document.createElement("img");
+    // image.setAttribute("src", projectArray[0].image);
+    // image.setAttribute("alt", "flow-diagram");
+    // image.setAttribute("id", "flow-diagram");
+    // projects.appendChild(image);
 }
-renderProjects();
+// renderProjects();
