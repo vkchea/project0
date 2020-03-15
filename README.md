@@ -8,3 +8,6 @@ Some problems that occured during the process was creating an image element. Con
 
 Day 2:
 Modified the CSS of navbar using Flexbox web style model. Properties were a little strange compared to the normal box model I usually use. The pros I can see so far is that it auto adjusts itself when the browser is zoomed out and in on. It might be useful with more practice. I also added the main contents into the home page; About me, Project list, Games. One messy aspect of flexbox is that it gets rid of bullets. Apparently display: flex eliminates the list styles entirely. Which is kind of a shame. Need to find a workaround for that problem. 
+
+Day 3/4:
+Changed the project labels to have some color. Gave a width to the project description so it doesn't look too elongated. Centered project image. Made the project list dynamic using Javascript and DOM. Added a 'Add project button' to Project List section. It pops a modal up that gives the user a form to fill in order to add to the current project list. It is static at the moment. Styled it so it looks neat. 
