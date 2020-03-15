@@ -9,7 +9,7 @@
   border-bottom: solid;
   border-width: 1px;
   margin-top: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .label-icon{
   display: inline-block;
@@ -105,6 +105,7 @@ ol.hobby-list ol {
   color: black;
   font-family: 'Ramabhadra', sans-serif;
   font-size: 11px;
+  font-weight: normal !important;
   padding: 10px 10px;
   flex: 3;
   height: 82vh;
@@ -113,10 +114,116 @@ ol.hobby-list ol {
   overflow-y: auto;
 }
 .get-projects{
+  font-weight: normal !important;
+  flex-wrap: wrap;
+  flex-direction: column;
   text-align: center;
 }
-#flow-diagram{
+.project-label{
+  color:white ;
+  border-radius: 5px;
+  border-style: double;
+  background-color:rgb(145, 228, 221);
+  padding: 7px 7px;
+}
+.project-content{
+  font-weight: normal !important;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.project-description{
+  width: 400px;
+}
+.project-divider{
+  margin-bottom: 20px;
+}
+#add-project-btn{
+  float: right;
+  margin-right: 5px;
+  padding: 2px 5px;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 200px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  width: 400px;
+}
+.add-project-title {
+  display: inline-block;
+}
+.add-project-title p {
+  font-size: 12px;
+}
+#add-project-close{
+  color: rgb(145, 228, 221);
+  width: 25px;
+  text-align: center;
+  border: solid;
+  border-radius: 2px;
+  border-width: 1px;
+  border-color: rgb(145, 228, 221);
+  margin-left: 253px;
+}
+#add-project-close:hover,
+#add-project-close:focus {
+  color: white;
+  width: 25px;
+  text-align: center;
+  border: solid;
+  border-radius: 2px;
+  border-width: 1px;
+  border-color: rgb(106, 228, 218);
+  background-color: rgb(106, 228, 218);
+  margin-left: 253px;
+  text-decoration: none;
+  cursor: pointer;
+}
+#add-project-name{
+  padding-left: 5px;
+}
+#add-project-description{
+  width: 350px;
+  height: 100px;
+  padding: 5px 10px;
+}
+#add-project-submit{
+  color:white;
+  border-radius: 5px;
+  border-style: double;
+  background-color:rgb(145, 228, 221);
+  padding: 10px 15px;
+  margin-left: 290px;
+  cursor: pointer;
+}
+#add-project-submit:hover{
+  color:white;
+  border-radius: 5px;
+  border-style: double;
+  background-color:rgb(136, 226, 219);
+  padding: 10px 15px;
+  margin-left: 290px;
+  cursor: pointer;
+}
+.project-image{
+  display:block;
+  margin: 0 auto;
   width: 700px;
+  height: auto;
 }
 /*-------------- Games -----------------*/
 

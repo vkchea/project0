@@ -1,0 +1,58 @@
+/*--------------- General ------------------*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .horizontal-line{
+    width: 100%;
+    border-bottom: solid;
+    border-width: 1px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .label-icon{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 10px;
+  }
+  .material-icons {
+    color:rgb(161, 218, 123);
+    font-size: 20px !important;
+    padding-bottom: 0px !important;
+    margin-right: 5px;
+  }
+  /*--------------- Navbar------------------*/
+  #nav-bar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 1%;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+  }
+  .nav-bar-main a{
+    color: black;
+    font-family: 'Ramabhadra', sans-serif;
+    font-size: 13px;
+    padding: 0px 20px;
+    margin-left: 10px;
+    text-decoration: none;
+  }
+  .nav-bar-main a:hover{
+    color:rgb(161, 218, 123);
+  }
+  #logo{
+    height: 100px;
+    cursor: default;
+  }
+  .logout {
+    color: black;
+    font-family: 'Ramabhadra', sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    padding: 9px 25px;
+    margin-left: auto;
+  }
+  .logout:hover{
+    color:rgb(161, 218, 123);
+  }

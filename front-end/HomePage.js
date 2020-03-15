@@ -1,3 +1,5 @@
+/*------------- Render Navbar ---------------*/
+
 let navArray = ["HOME", "GIT PROJECTS", "BLOG POSTS"];
 
 function renderNavbar(){
@@ -14,7 +16,7 @@ function renderNavbar(){
     ul.setAttribute("class", "nav-bar-main");
     for(let i = 0; i < navArray.length; i++){
         let a = document.createElement("a");
-        a.setAttribute("href", "/" + navArray[i].toLowerCase());
+        a.setAttribute("href", "/" + "HomePage.html");
         a.innerHTML = navArray[i];
         ul.appendChild(a);
     }
@@ -50,6 +52,8 @@ renderNavbar();
 //     label.innerHTML = 
 // }
 
+/*------------- Render Projects ---------------*/
+
 let projectArray = {
     0: {
         name: "Flow Diagram V1",
@@ -59,22 +63,49 @@ let projectArray = {
     },
     1: {
         name: "Home Page Wireframe",
-        description:"",
-        image: ""
+        description:"Home page wireframe created by LucidCharts.",
+        image: "images/homepage.png"
     }
 }
-// function renderProjects(){
-//     let projects = document.getElementById("get-projects");
-//     let name = document.createElement("label");
-//     name.innerHTML = projectArray[0].name;
-//     projects.appendChild(name);
-//     let description = document.createElement("p");
-//     description.innerHTML = projectArray[0].description;
-//     projects.appendChild(description);
-//     let image = document.createElement("img");
-//     image.setAttribute("src", projectArray[0].image);
-//     image.setAttribute("alt", "flow-diagram");
-//     image.setAttribute("id", "flow-diagram");
-//     projects.appendChild(image);
-// }
-// renderProjects();
+function renderProjects(){
+    let projects = document.getElementById("get-projects");
+    for(let i = 0; i < Object.keys(projectArray).length; i++){
+        let div = document.createElement("div");
+        div.setAttribute("class", "project-content");
+        let name = document.createElement("label");
+        name.innerHTML = projectArray[i].name;
+        name.setAttribute("class", "project-label");
+        projects.appendChild(name);
+        let description = document.createElement("p");
+        description.innerHTML = projectArray[i].description;
+        description.setAttribute("class", "project-description");
+        div.appendChild(description);
+        let image = document.createElement("img");
+        image.setAttribute("src", projectArray[i].image);
+        image.setAttribute("alt", projectArray[i].name);
+        image.setAttribute("class", "project-image");
+        div.appendChild(image);
+        let hr = document.createElement("hr");
+        hr.setAttribute("class", "project-divider");
+        div.appendChild(hr);
+        projects.appendChild(div);
+    }
+}
+renderProjects();
+
+/*-------------Add Project Modal ---------------*/
+
+var modal = document.getElementById("myModal");
+var addProjbtn = document.getElementById("add-project-btn");
+var addProjClose = document.getElementById("add-project-close");
+addProjbtn.onclick = function() {
+  modal.style.display = "block";
+}
+addProjClose.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}

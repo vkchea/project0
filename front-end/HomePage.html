@@ -51,9 +51,6 @@
                         <li>Volleyball</li>
                     </ol>
                 </li>
-                <li> Travel
-
-                </li>
             </ol>
             <span class="label-icon">
                 <i class="material-icons">whatshot</i>
@@ -72,6 +69,26 @@
             <span class="label-icon">
                 <label>Project List </label>
             </span>
+            <span>
+                <button class="label-icon" id="add-project-btn">+</button>
+            </span>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="add-project-title">
+                        <p id="add-project-title">Add a Project</p>
+                    </span>
+                    <span class="add-project-title">
+                        <p id="add-project-close">&times;</p>
+                    </span>
+                    <p>Project Name:</p>
+                    <input type="text" id="add-project-name">
+                    <p>Project Description:</p>
+                    <textarea type="text" id="add-project-description"></textarea>
+                    <p>Select Image (optional): </p>
+                    <input type="file" id="img" name="img" accept="image/*">
+                    <button id="add-project-submit">Submit</button>
+                </div>
+            </div>
             <div class="horizontal-line"></div>
             <div id="get-projects"></div>
         </div>
@@ -83,6 +100,7 @@
                 <label>Games </label>
             </span>
             <div class="horizontal-line"></div>
+            <a href="GamePage.html/1">Simple Guessing Game</a>
         </div>
     </div>
     <script src="HomePage.js"></script>
