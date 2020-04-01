@@ -5,7 +5,7 @@ function renderNavbar(){
     let navbar = document.getElementById("nav-bar");
     
     let logo = document.createElement("img");
-    logo.setAttribute("src", "images/logo.png");
+    logo.setAttribute("src", "../images/logo.png");
     logo.setAttribute("alt", "logo");
     logo.setAttribute("id", "logo")
     navbar.appendChild(logo);
@@ -20,7 +20,7 @@ function renderNavbar(){
         } else{
           getFirstWord = navArray[i].substr(0, navArray[i].indexOf(' '));
         }
-        a.setAttribute("href", "./" + getFirstWord.toLowerCase() + ".html");
+        a.setAttribute("href", "../" + getFirstWord.toLowerCase() + ".html");
         a.innerHTML = navArray[i];
         ul.appendChild(a);
     }
