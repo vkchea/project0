@@ -1,4 +1,5 @@
 let navArray = ["HOME", "GIT PROJECTS", "BLOG POSTS", "GAMES"];
+
 function renderNavbar(){
     
     let navbar = document.getElementById("nav-bar");
@@ -13,7 +14,14 @@ function renderNavbar(){
     ul.setAttribute("class", "nav-bar-main");
     for(let i = 0; i < navArray.length; i++){
         let a = document.createElement("a");
-        a.setAttribute("href", "/" + "HomePage.html");
+        let getFirstWord = '';
+        if(navArray[i].substr(0, navArray[i].indexOf(' ')) == ''){
+          getFirstWord = navArray[i]
+        } else{
+          getFirstWord = navArray[i].substr(0, navArray[i].indexOf(' '));
+        }
+        console.log(getFirstWord);
+        a.setAttribute("href", "/" + getFirstWord.toLowerCase() + ".html");
         a.innerHTML = navArray[i];
         ul.appendChild(a);
     }
