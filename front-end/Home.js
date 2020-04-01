@@ -1,6 +1,6 @@
 /*------------- Render Navbar ---------------*/
 
-let navArray = ["HOME", "GIT PROJECTS", "BLOG POSTS"];
+let navArray = ["HOME", "GIT PROJECTS", "BLOG POSTS", "GAMES"];
 
 function renderNavbar(){
     
@@ -16,7 +16,14 @@ function renderNavbar(){
     ul.setAttribute("class", "nav-bar-main");
     for(let i = 0; i < navArray.length; i++){
         let a = document.createElement("a");
-        a.setAttribute("href", "/" + "HomePage.html");
+        let getFirstWord = '';
+        if(navArray[i].substr(0, navArray[i].indexOf(' ')) == ''){
+          getFirstWord = navArray[i]
+        } else{
+          getFirstWord = navArray[i].substr(0, navArray[i].indexOf(' '));
+        }
+        console.log(getFirstWord);
+        a.setAttribute("href", "/" + getFirstWord.toLowerCase() + ".html");
         a.innerHTML = navArray[i];
         ul.appendChild(a);
     }
@@ -95,9 +102,9 @@ renderProjects();
 
 /*-------------Add Project Modal ---------------*/
 
-var modal = document.getElementById("myModal");
-var addProjbtn = document.getElementById("add-project-btn");
-var addProjClose = document.getElementById("add-project-close");
+let modal = document.getElementById("myModal");
+let addProjbtn = document.getElementById("add-project-btn");
+let addProjClose = document.getElementById("add-project-close");
 addProjbtn.onclick = function() {
   modal.style.display = "block";
 }
