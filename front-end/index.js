@@ -1,4 +1,4 @@
-let navArray = ["HOME", "GIT PROJECTS", "BLOG POSTS"];
+let navArray = ["HOME", "GIT PROJECTS", "BLOG POSTS", "GAMES"];
 function renderNavbar(){
     
     let navbar = document.getElementById("nav-bar");
